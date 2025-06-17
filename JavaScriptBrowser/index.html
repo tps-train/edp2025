@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser JS Lab (Chapter 7)</title>
+  <style>
+    body { font-family: sans-serif; }
+    .container { border: 1px solid #ccc; padding: 10px; margin-top: 15px; }
+    .highlight { background-color: yellow; }
+    #data-container { border-top: 2px solid navy; margin-top: 20px; padding-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">JavaScript in the Browser</h1>
+  <p>Open the developer console (F12) to see log messages!</p>
+
+  <div class="container">
+    <h2>Window & Document</h2>
+    <button id="changeTitleBtn">Change Document Title (7.12)</button>
+    <button id="navigateBtn">Go Back in History (7.10)</button>
+    <p id="info-p"></p>
+  </div>
+
+  <div class="container">
+    <h2>DOM Selection & Manipulation</h2>
+    <button id="highlightItemsBtn">Highlight List Items (7.15)</button>
+    <button id="addItemBtn">Add New List Item (7.18)</button>
+    <button id="removeItemBtn">Remove Last Item (7.18)</button>
+    <button id="changeHtmlBtn">Change HTML of First Item (7.17)</button>
+    <button id="showAttributesBtn">Show 'data-info' Attribute (7.18)</button>
+    <ul id="item-list">
+      <li class="item" data-info="first">First Item</li>
+      <li class="item" data-info="second">Second Item</li>
+      <li class="item" data-info="third">Third Item</li>
+    </ul>
+  </div>
+
+  <div class="container">
+      <h2>Events</h2>
+      <input type="text" id="userInput" placeholder="Type and see console..." />
+      <p>This button uses an HTML attribute for its event:</p>
+      <button onclick="alertOnClick()">Click Me for Alert (7.20)</button>
+  </div>
+  
+  <div class="container">
+    <h2>Network Requests with Fetch (7.22)</h2>
+    <button id="fetchDataBtn">Fetch Data from API</button>
+    <div id="data-container">Data will appear here...</div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
