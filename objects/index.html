@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student scores</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" id="student"></td>
+                </tr>
+                <tr>
+                    <td>Score: </td>
+                    <td><input type="text" id="score"></td>
+                </tr>
+                <tr>
+                    <!-- <td colspan="2" align="center"><button id="add">Add Score</button></td> -->
+                    <td colspan="2" align="center"><button id="add" onclick="addScore()">Add Score</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button id="sort">Sort Scores</button></td>
+                </tr>
+            </table>
+        <div id="scoresout"></div>
+        <script src="js/external.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+table {
+    border: 2px solid black;
+    width: 500px
+}
+
+th {
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+tr {
+    border-bottom: 2px solid black;
+}
+
+td {
+    font-size: 18pt
+}
+
+td.student {
+    text-align: left;
+}
+
+td.score {
+    text-align: center;
+}
+
+input {
+    font-size: 18pt
+}
